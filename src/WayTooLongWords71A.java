@@ -8,17 +8,11 @@ public class WayTooLongWords71A {
 	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		int count = Integer.parseInt(in.nextLine());
-		String words[] = new String[count]; //the list of words to check
-		
-		//load the list of words
-		for (int i = 0; i < words.length; i++) {
-			words[i] = in.nextLine();
-		}
-		
+		int count = Integer.parseInt(in.nextLine()); //number of words in the list
+
 		//for each word in the list, output the result of the method abbreviation
-		for (int i = 0; i < words.length; i++) {
-			System.out.println(getAbbreviation(words[i]));
+		for (int i = 0; i < count; i++) {
+			System.out.println(getAbbreviation(in.nextLine()));
 		}
 	}
 
